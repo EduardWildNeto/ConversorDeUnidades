@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+
+}
+
+/*  Navbar */
+.navbar {
+    background: rgb(6, 0, 206);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    max-height: 55px;
+    margin-bottom: 10px;
+    position: sticky;
+    font-size: 20x;
+    z-index: 999;
+    top: 0px;
+    position: sticky;
+}
+
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    margin: auto;
+}
+
+#dominio-principal {
+    padding-left: 10%;
+    padding-right: 61%;
+    font-size: 18px;
+}
+
+#outros-dominios-1 {
+    padding-left: 406px;
+    font-size: 15px;
+}
+
+#outros-dominios {
+    font-size: 15px;
+    padding-left: 1px;
+}
+
+/*Dropdown*/
+
+.dropbtn {
+    background-color: rgb(6, 0, 206);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(6, 0, 206);
+    z-index: 999;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 999;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;z-index: 999;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;z-index: 999;}
+
+/* Container Principal */
+
+
+
+/* Div para alinhar */
+
+.div-para-alinhar {
+    display: flex;
+}
+
+.div-para-alinhar h1 {
+    margin-right: 50%;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#input-um {
+    width: 340px;
+    height: 35px;
+    border-radius: 3px;
+    border-style: none;
+    border: solid 1px black;
+    margin-right: 38px;
+    font-size: 20px;
+}
+
+#input-dois {
+    font-size: 20px;
+    width: 340px;
+    max-width: 340px;
+    height: 35px;
+    max-height: 50px;
+    resize: none;
+    background-color: rgb(185, 185, 185);
+    border-style: none;
+    border: solid 1px black;
+    border-radius: 3px;
+}
+
+/* Container Secundário */
+
+.container-secundario {
+    background-color: rgb(238, 238, 238);
+    width: 750px;
+    height: 300px;
+    margin: auto;
+    padding: 15px;
+    margin-top: 50px;
+    border: solid 1.5px black;
+    border-radius: 10px;
+}
+
+.container-secundario h3 {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.container-secundario select {
+    margin-top: 15px;
+    height: 30px;
+    width: 340px;
+    border-radius: 3px;
+}
+
+#h3-unidade-comparar {
+    margin-top: 5px;
+}
+
+#h3-quantidade-medida {
+    margin-top: 15px;
+}
+
+.container-secundario input {
+    height: 30px;
+    width: 100px;
+}
+
+/* Select medida comparar*/
+
+#select-medida-para-comparar {
+    margin-right: 38px;
+    height: 118px;
+}
+#select-medida-para-comparar option {
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#select-medida-para-comparar option:target {
+    background-color: rgb(206, 206, 206);
+}
+
+/* Select medida comparação*/
+
+#select-medida-para-comparacao {
+    height: 118px;
+}
+
+#select-medida-para-comparacao option {
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#select-medida-para-comparacao option:target {
+    background-color: rgb(206, 206, 206);
+}
+/* Result */
+
+#div-para-result {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.result {
+    font-size: 12px;
+    margin-top: 8%;
+
+}
+
+#result-error {
+    color: red;
+}
+
+/* Container secundário info */
+
+.container-secundario-info {
+    width: 750px;
+    height: 200px;
+    background-color: rgb(238, 238, 238);
+    border: solid 1.5px black;
+    margin: auto;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+/* Div para centralizar */
+
+.div-para-centralizar {
+    text-align: center;
+}
+
+.div-para-centralizar h2 {
+    margin-bottom: 10px;
+}
+/* km */
+ #km {
+    height: 180px;
+}
+
+#hm {
+    height: 180px; 
+}
+
+#dam {
+    height: 160px; 
+}
+
+#m {
+    height: 170px;
+}
+
+#dm {
+    height: 160px;
+}
+
+#cm {
+    height: 160px;
+}
+
+#mm {
+    height: 160px;
+}
