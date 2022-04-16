@@ -272,7 +272,7 @@ body {
 }
 
 
-@media(max-width:700px){
+@media(max-width:850px){
     .container-secundario {
         max-width: 500px;
         width: 80%;
@@ -286,8 +286,23 @@ body {
     .div-para-alinhar {
         flex-wrap: wrap;
     }
+}
 
-    #select-medida-comparar {
-        height: 20px;
+@media(max-width:450px){
+
+    #input-um {
+        width: 240px;
+    }
+    
+    #input-dois {
+        width: 240px;
+    }
+
+    #select-medida-para-comparacao {
+        width: 240px;
+    }
+
+    #select-medida-para-comparar {
+        width: 240px;
     }
 }
