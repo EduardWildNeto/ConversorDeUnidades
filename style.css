@@ -286,9 +286,28 @@ body {
     .div-para-alinhar {
         flex-wrap: wrap;
     }
+
+    #input-um {
+        width: 400px;
+    }
+    
+    #input-dois {
+        width: 400px;
+    }
+
+    #select-medida-para-comparacao {
+        width: 400px;
+        height: 40px;
+        
+    }
+
+    #select-medida-para-comparar {
+        width: 400px;
+        height: 40px;
+    }
 }
 
-@media(max-width:450px){
+@media(max-width:550px){
 
     #input-um {
         width: 240px;
