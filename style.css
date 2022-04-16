@@ -275,9 +275,19 @@ body {
 @media(max-width:700px){
     .container-secundario {
         max-width: 500px;
-        width: 100%;
+        width: 80%;
     }
+
+    .container-secundario-info {
+        max-width: 500px;
+        width: 80%;
+    }
+
     .div-para-alinhar {
         flex-wrap: wrap;
+    }
+
+    #select-medida-comparar {
+        height: 20px;
     }
 }
