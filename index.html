@@ -27,39 +27,36 @@
        </nav><!--size="5"-->
         <div class="container-secundario" id="primeiro-container-secundario"> 
             <div class="div-para-alinhar">
-                <h1>De:</h1>
-                <h1>Para:</h1>
-            </div>
-            <div class="div-para-alinhar">
-                <input type="" id="input-um">
-                <input readonly type='text'id="input-dois"></input>
-            </div>
-            <div class="div-para-alinhar" >
-                <select id="select-medida-para-comparar" size="19">
-                    <option value="1000000">Quilômetro</option>
-                    <option value="100000" >Hectómetro</option>
-                    <option value="10000">Decâmetro</option>
-                    <option value="1000" selected>Metro</option>
-                    <option value="100">Decimetro</option>
-                    <option value="10">Centímetro</option>
-                    <option value="1">Milímetro</option>
-                </select>
-                <select id="select-medida-para-comparacao" size="19">
-                    <option value="1000000" selected>Quilômetro</option>
-                    <option value="100000">Hectómetro</option>
-                    <option value="10000">Decâmetro</option>
-                    <option value="1000">Metro</option>
-                    <option value="100">Decimetro</option>
-                    <option value="10">Centímetro</option>
-                    <option value="1">Milímetro</option>
-                </select>
-                    <!--<button onclick="scrollButton"></button>-->
+                <div class="div-para-alinhar-item">
+                    <h1>De:</h1>
+                    <input id="input-um">
+                    <select id="select-medida-para-comparar" size="5">
+                        <option value="1000000">Quilômetro</option>
+                        <option value="100000" >Hectómetro</option>
+                        <option value="10000">Decâmetro</option>
+                        <option value="1000" selected>Metro</option>
+                        <option value="100">Decimetro</option>
+                        <option value="10">Centímetro</option>
+                        <option value="1">Milímetro</option>
+                    </select>
                 </div>
-                <div id="div-para-result">
-                    
+                <div class="div-para-alinhar-item">
+                    <h1>Para:</h1>
+                    <input readonly type='text'id="input-dois"></input>
+                    <select id="select-medida-para-comparacao" size="5">
+                        <option value="1000000" selected>Quilômetro</option>
+                        <option value="100000">Hectómetro</option>
+                        <option value="10000">Decâmetro</option>
+                        <option value="1000">Metro</option>
+                        <option value="100">Decimetro</option>
+                        <option value="10">Centímetro</option>
+                        <option value="1">Milímetro</option>
+                    </select>
                 </div>
-            </div>  
-
+            </div>
+            <div id="div-para-result">
+                         
+            </div>
             <div class="container-secundario-info">
                 <div class="div-para-centralizar">
                     <h2>Como Usar</h2>
