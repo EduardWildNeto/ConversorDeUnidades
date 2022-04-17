@@ -7,7 +7,7 @@
 body {
     font-family: arial;
     margin: 0;
-
+    color:black;
 }
 
 /* element */
@@ -18,6 +18,7 @@ body {
 }
 
 /*  Navbar */
+
 .navbar {
     background: rgb(6, 0, 206);
     color: rgb(0, 0, 0);
@@ -57,7 +58,7 @@ body {
 }
 
 #outros-dominios-1 {
-    padding-left: 406px;
+    float:left;
     font-size: 15px;
 }
 
@@ -70,12 +71,12 @@ body {
 
 .dropbtn {
     background-color: rgb(6, 0, 206);
-    color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
     z-index: 999;
+    color: white;
   }
   
   /* Dropdown button on hover & focus */
@@ -95,7 +96,7 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: rgb(238, 238, 238);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 999;
@@ -103,11 +104,11 @@ body {
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block; 
     z-index: 999;
+    color: black;
   }
   
   /* Change color of dropdown links on hover */
@@ -148,9 +149,7 @@ body {
 #input-dois {
     font-size: 20px;
     width: 340px;
-    max-width: 340px;
     height: 35px;
-    max-height: 50px;
     resize: none;
     background-color: rgb(185, 185, 185);
     border-style: none;
