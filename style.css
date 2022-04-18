@@ -30,6 +30,7 @@ body {
     z-index: 999;
     top: 0px;
     position: sticky;
+    display: flex;
 }
 
 
@@ -52,9 +53,8 @@ body {
 }
 
 #dominio-principal {
-    padding-left: 10%;
-    padding-right: 61%;
     font-size: 18px;
+
 }
 
 #outros-dominios-1 {
@@ -67,6 +67,48 @@ body {
     padding-left: 1px;
 }
 
+/*.navbar {
+    background: rgb(6, 0, 206);
+    color: white;
+    font-size: 20px;
+    padding: 1%;
+    min-height: 65px;
+}
+
+.navbar ul {
+    list-style: none; 
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li:last-child {
+    float: right; 
+    margin-right: 4%;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#dominio-principal {
+    font-size: 18px;
+    position: absolute;
+}
+ 
+
+#outros-dominios-1 {
+    padding-left: 406px;
+    font-size: 15px;
+}
+
+#outros-dominios {
+    font-size: 15px;
+    padding-left: 1px;
+}*/
+
 /*Dropdown*/
 
 .dropbtn {
@@ -77,7 +119,7 @@ body {
     cursor: pointer;
     z-index: 999;
     color: white;
-  }
+    }
   
   /* Dropdown button on hover & focus */
   .dropbtn:hover, .dropbtn:focus {
@@ -115,7 +157,8 @@ body {
   .dropdown-content a:hover {background-color: #ddd;z-index: 999;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;z-index: 999;}
+  .show {display:block;z-index: 999;
+}
 
 /* Container Principal */
 
