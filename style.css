@@ -16,45 +16,54 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* Header */
+
 
 /*  Navbar */
 
 .navbar {
     background: rgb(6, 0, 206);
-    color: rgb(0, 0, 0);
-    padding: 1px;
     max-height: 55px;
     margin-bottom: 10px;
     position: sticky;
     font-size: 20x;
     z-index: 999;
     top: 0px;
-    position: sticky;
-    display: flex;
+    width: 100%;
+    justify-content: center;
+    display:flex;
+    justify-content: space-between;
+    
 }
 
-
-.navbar ul {
+/*
+.navbar ul { justify-content: center;
     list-style: none;
     padding: 0;
 }
 
-.navbar ul li {
+.navbar li {
     display: inline;
 }
 
-.navbar ul li a {
+.navbar a {
     display: inline;
     color: white;
     text-decoration: none;
     padding: 15px;
     display: inline-block;
-    margin: auto;
-}
+    
+}*/
+
 
 #dominio-principal {
     font-size: 18px;
-
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    margin-right:0 auto;
 }
 
 #outros-dominios-1 {
@@ -65,6 +74,13 @@ body {
 #outros-dominios {
     font-size: 15px;
     padding-left: 1px;
+}
+
+.ajeita-navbar {
+    
+    width:100%;
+    margin:0 auto;
+    display:block
 }
 
 /*.navbar {
@@ -137,7 +153,6 @@ body {
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: absolute;
     background-color: rgb(238, 238, 238);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -242,7 +257,7 @@ body {
 /* Select medida comparar*/
 
 #select-medida-para-comparar {
-    height: 118px;
+    height: 151px;
 }
 #select-medida-para-comparar option {
     display: block;
@@ -258,7 +273,7 @@ body {
 /* Select medida comparação*/
 
 #select-medida-para-comparacao {
-    height: 118px;
+    height: 151px;
 }
 
 #select-medida-para-comparacao option {
