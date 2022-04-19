@@ -83,47 +83,6 @@ body {
     display:block
 }
 
-/*.navbar {
-    background: rgb(6, 0, 206);
-    color: white;
-    font-size: 20px;
-    padding: 1%;
-    min-height: 65px;
-}
-
-.navbar ul {
-    list-style: none; 
-}
-
-.navbar ul li {
-    display: inline;
-}
-
-.navbar ul li:last-child {
-    float: right; 
-    margin-right: 4%;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-#dominio-principal {
-    font-size: 18px;
-    position: absolute;
-}
- 
-
-#outros-dominios-1 {
-    padding-left: 406px;
-    font-size: 15px;
-}
-
-#outros-dominios {
-    font-size: 15px;
-    padding-left: 1px;
-}*/
 
 /*Dropdown*/
 
