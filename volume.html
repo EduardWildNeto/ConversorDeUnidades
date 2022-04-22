@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style4.css">
+        <title>Conversor de Medidas - Volume</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" id="dominio-principal">Conversor de Unidades</a>
+                <div class="dropdown">
+                    <div class="ajeita-navbar">
+                        <button onclick="dropdown()" class="dropbtn">Menu</button>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="ajeita-navbar">
+                            <a href="index.html">Distância</a>
+                            <a href="peso.html">Peso</a>
+                            <a href="area.html">Área</a>
+                            <a href="volume.html">Volume</a>
+                            <a href="">Temperatura (em construção)</a>
+                            <a href="">Tempo (em construção)</a>
+                            <a href="">Dados (em construção)</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-secundario" id="primeiro-container-secundario">
+            <div class="div-para-alinhar">
+                <div class="div-para-alinhar-item">
+                    <h1>De:</h1>
+                    <input id="input-um">
+                    <select id="select-medida-para-comparar" size="20">
+                        <option value="1000000000000000000000000000000000000">Quilômetro Cubico</option>
+                        <option value="1000000000000000000000000000000000">Hectómetro Cubico</option>
+                        <option value="1000000000000000000000000000000">Decâmetro Cubico</option>
+                        <option selected value="1000000000000000000000000000">Metro Cubico</option>
+                        <option value="1000000000000000000000000">Decímetro Cubico</option>
+                        <option value="1000000000000000000000">Centímetro Cubico</option>
+                        <option value="1000000000000000000">Milímetro Cubico</option>
+                        <option value="1000000000">Micrómetro Cubico</option>
+                        <option value="1">Nanômetro Cubico</option>
+                    </select>
+                </div>
+                <div class="div-para-alinhar-item">
+                    <h1>Para:</h1>
+                    <input id="input-dois">
+                    <select id="select-medida-para-comparacao" size="20">
+                        <option selected value="1000000000000000000000000000000000000">Quilômetro Cubico</option>
+                        <option value="1000000000000000000000000000000000">Hectómetro Cubico</option>
+                        <option value="1000000000000000000000000000000">Decâmetro Cubico</option>
+                        <option value="1000000000000000000000000000">Metro Cubico</option>
+                        <option value="1000000000000000000000000">Decímetro Cubico</option>
+                        <option value="1000000000000000000000">Centímetro Cubico</option>
+                        <option value="1000000000000000000">Milímetro Cubico</option>
+                        <option value="1000000000">Micrómetro Cubico</option>
+                        <option value="1">Nanômetro Cubico</option>
+                    </select>
+                </div>
+            </div>
+            <div id="div-para-result">
+            </div>  
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Como Usar</h2>
+            </div>
+            <h3>
+                Para usar está ferramenta, é muito fácil, em primeiro lugar escolha, na primeira caixa de opções,
+                a unidade que quer comparar, em segundo lugar, na seguda caixa, escolha a  unidade que será usada 
+                como comparação e, por fim, acima dá primeira caixa, escolha a quantidade de unidades que quer comparar.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Quilômetro Cubico</h2>
+            </div>
+            <h3>
+                O Quilômetro Cubico (km³) é uma unidade de medida usada para medir o volume de algo, que equivale a 
+                1000000000 metros cubicos (m³) ou 1E9 metros cubicos.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Hectómetro Cubico</h2>
+            </div>
+            <h3>
+                O Hectómetro Cubico (hm³) é uma unidade de medida usada para medir o volume de algo, que equivale a 
+                1000000 metros cubicos (m³) ou 1E6 metros cubicos.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Decâmetro Cubico</h2>
+            </div>
+            <h3>
+                O Decâmetro Cubico (dam³) é uma unidade de medida usada para medir o volume de algo, que equivale a 
+                1000 metros cubicos (m³) ou 1E3 metros cubicos.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Metro Cubico</h2>
+            </div>
+            <h3>
+                O Metro Cubico (m³) é a principal unidade de medida usada para medir o volume de algo, que equivale 
+                a distâcia que a luz percorre em 1/299 792 458 de segundo ao cubo.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Decímetro Cubico</h2>
+            </div>
+            <h3>
+                O Decímetro Cubico (dm³) é uma unidade de medida usada para medir o volume de algo, que equivale a 
+                0,001 metros cubicos (m³) ou 1E-3 metros cubicos.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Centímetro Cubico</h2>
+            </div>
+            <h3>
+                O Centímetro Cubico (cm³) é uma unidade de medida usada para medir o volume de algo, que equivale a 
+                0,000001 metros cubicos (m³) ou 1E-6 metros cubicos.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Milímetro Cubico</h2>
+            </div>
+            <h3>
+                O Milímetro Cubico (mm³) é uma unidade de medida usada para medir o volume de algo, que equivale a 
+                0,000000001 metros cubicos (m³) ou 1E-9 metros cubicos.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Micrómetro Cubico</h2>
+            </div>
+            <h3>
+                O Micrómetro Cubico (μm³) é uma unidade de medida usada para medir o volume de algo, que equivale a 
+                 metros cubicos (m³) ou 1E- metros cubicos.
+            </h3>
+        </div>
+
+        <script src="./dropdown.js"></script>
+        <script src="./script4.js"></script>
+    </body>
+</html>
