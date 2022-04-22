@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style2.css">
+        <title>Conversor de Medidas - Peso</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" id="dominio-principal">Conversor de Unidades</a>
+                <div class="dropdown">
+                    <div class="ajeita-navbar">
+                        <button onclick="dropdown()" class="dropbtn">Menu</button>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="ajeita-navbar">
+                            <a href="index.html">Distância</a>
+                            <a href="peso.html">Peso</a>
+                            <a href="">Área (em construção)</a>
+                            <a href="">Volume (em construção)</a>
+                            <a href="">Temperatura (em construção)</a>
+                            <a href="">Tempo (em construção)</a>
+                            <a href="">Dados (em construção)</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-secundario"> 
+            <div class="div-para-alinhar">
+                <div class="div-para-alinhar-item">
+                    <h1>De:</h1>
+                    <input id="input-um">
+                    <select id="select-medida-para-comparar" size="20">
+                        <option value="1000000000000000000000000">Gigatonelada</option>
+                        <option value="1000000000000000000000">Megatonelada</option>
+                        <option value="1000000000000000000">Quilotonelada</option>
+                        <option value="1000000000000000">Tonelada</option>
+                        <option value="1000000000000">Quilograma</option>
+                        <option value="100000000000">Hectograma</option>
+                        <option value="10000000000">Decagrama</option>
+                        <option selected value="1000000000">Grama</option>
+                        <option value="100000000">Decigrama</option>
+                        <option value="10000000">Centigrama</option>
+                        <option value="1000000">Miligrama</option>
+                        <option value="1000">Micrograma</option> 
+                        <option value="1">Nanograma</option>
+                    </select>
+                </div>
+                <div class="div-para-alinhar-item">
+                    <h1>Para:</h1>
+                    <input id="input-dois">
+                    <select id="select-medida-para-comparacao" size="20">
+                        <option value="1000000000000000000000000">Gigatonelada</option>
+                        <option value="1000000000000000000000">Megatonelada</option>
+                        <option value="1000000000000000000">Quilotonelada</option>
+                        <option value="1000000000000000">Tonelada</option>
+                        <option selected value="1000000000000">Quilograma</option>
+                        <option value="100000000000">Hectograma</option>
+                        <option value="10000000000">Decagrama</option>
+                        <option value="1000000000">Grama</option>
+                        <option value="100000000">Decigrama</option>
+                        <option value="10000000">Centigrama</option>
+                        <option value="1000000">Miligrama</option>
+                        <option value="1000">Micrograma</option> 
+                        <option value="1">Nanograma</option>
+                    </select>
+                </div>
+            </div>
+            <div id="div-para-result">
+            </div>     
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Como Usar</h2>
+            </div>
+            <h3>
+                Para usar está ferramenta, é muito fácil, em primeiro lugar escolha, na primeira caixa de opções,
+                a unidade que quer comparar, em segundo lugar, na seguda caixa, escolha a  unidade que será usada 
+                como comparação e, por fim, acima dá primeira caixa, escolha a quantidade de unidades que quer comparar.
+            </h3>
+        </div>  
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Gigatonelada</h2>
+            </div>
+            <h3>
+                A Gigatonelada é uma unidade usada para medir o Peso de um objeto com massa, que equivale a 1000000000 de
+                toneladas, ou 1E9 tonaladas.
+            </h3>
+        </div> 
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Megatonelada</h2>
+            </div>
+            <h3>
+                A Megatonelada é uma unidade usada para medir o Peso de um objeto com massa, que equivale a 1000000 de
+                toneladas, ou 1E6 tonaladas.
+            </h3>
+        </div> 
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Quilotonelada</h2>
+            </div>
+            <h3>
+                A Quilotonelada é uma unidade usada para medir o Peso de um objeto com massa, que equivale a 1000 
+                toneladas, ou 1E3 tonaladas.
+            </h3>
+        </div> 
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Tonelada</h2>
+            </div>
+            <h3>
+                A Tonelada é uma unidade usada para medir o Peso de um objeto com massa, que equivale a 1000 
+                quilogramas, ou 1E3 Quilogramas.
+            </h3>
+        </div> 
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Quilograma</h2>
+            </div>
+            <h3>
+                O Quilograma é uma unidade usada para medir o Peso de um objeto com massa, que equivale a 1000 
+                gramas, ou 1E3 gramas.
+            </h3>
+        </div> 
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Hectograma</h2>
+            </div>
+            <h3>
+                O Hectograma é uma unidade usada para medir o Peso de um objeto com massa, que equivale a 0,1
+                Quilogramas ou 1E-1 Quilogramas
+            </h3>
+        </div> 
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Decagrama</h2>
+            </div>
+            <h3>
+                O Decagrama é uma unidade usada para medir o Peso de um objeto com massa, que equivale a 0,01
+                Quilogramas ou 1E-2
+            </h3>
+        </div> 
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Grama</h2>
+            </div>
+            <h3>
+                O Grama é uma unidade usada para medir o Peso de um objeto com massa que equivale a 0,001 Quilogramas 
+                ou 1E-3 Quilogramas
+            </h3>
+        </div> 
+        
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Decigrama</h2>
+            </div>
+            <h3>
+                O Decigrama é uma unidade usada para medir o Peso de um objeto com massa que equivale a 0,1 gramas
+                ou 1E-1 gramas
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Centigrama</h2>
+            </div>
+            <h3>
+                O Centigrama é uma unidade usada para medir o Peso de um objeto com massa que equivale a 0,01 gramas
+                ou 1E-2 gramas
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Miligrama</h2>
+            </div>
+            <h3>
+                O Miligrama é uma unidade usada para medir o Peso de um objeto com massa que equivale a 0,001 gramas
+                ou 1E-3 gramas
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Micrograma</h2>
+            </div>
+            <h3>
+                O Micrograma é uma unidade usada para medir o Peso de um objeto com massa que equivale a 0,000001 gramas
+                ou 1E-6 gramas
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Nanograma</h2>
+            </div>
+            <h3>
+                O Nanograma é uma unidade usada para medir o Peso de um objeto com massa que equivale a 0,000000001 gramas
+                ou 1E-9 gramas
+            </h3>
+        </div>
+
+        <script src="./dropdown.js"></script>
+        <script src="./script2.js"></script>
+    </body>
+</html>
