@@ -94,8 +94,8 @@ function converterUnidadesDeDistancia() {
 
         
 
-        saber_nome_medida_comparar(medida_para_comparar)
-        saber_nome_medida_comparacao(medida_para_comparacao)
+        saber_nome_medida_comparar(medida_para_comparacao)
+        saber_nome_medida_comparacao(medida_para_comparar)
 
         if (quantidade_medida_comparar > 1) {
             nome_medida = `${nome_medida}s`
@@ -144,3 +144,4 @@ document.getElementById('select-medida-para-comparar').onchange = function() {
 document.getElementById("select-medida-para-comparacao").onchange = function() {
     converterUnidadesDeDistancia()
 }
+
