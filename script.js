@@ -85,18 +85,24 @@ function converterUnidadesDeDistancia() {
     let quantidade_medida_comparar = document.getElementById('input-um').value;
     quantidade_medida_comparar = quantidade_medida_comparar.replace(',', '.')
     if (quantidade_medida_comparar != ''){
-        result = medida_para_comparar*quantidade_medida_comparar/medida_para_comparacao
-        tamanho_result = result.toString().length;
+        let result = medida_para_comparar*quantidade_medida_comparar/medida_para_comparacao
+        let tamanho_result = result.toString().length;
         console.log(result)
         if (tamanho_result >= 12){
             result = result.toExponential(5)
         }
+
         
+
         saber_nome_medida_comparar(medida_para_comparar)
         saber_nome_medida_comparacao(medida_para_comparacao)
 
-        if (quantidade_medida_comparar != 1) {
-            nome_medida = nome_medida += 's'
+        if (quantidade_medida_comparar > 1) {
+            nome_medida = `${nome_medida}s`
+        }
+
+        if (result > 1) {
+            nome_medida_2 = `${nome_medida_2}s`
         }
        
         if (isNaN(result)) {
@@ -112,19 +118,19 @@ function converterUnidadesDeDistancia() {
             let div_result = document.getElementById('div-para-result')
             div_result.innerHTML = '<h1 class=result id=result><h1>'
             document.getElementById('input-dois').value = result;
-            document.getElementById('result').innerHTML = `Resultado: ${quantidade_medida_comparar} ${nome_medida_2} é igual a ${result} ${nome_medida}`
+            document.getElementById('result').innerHTML = `Resultado: ${quantidade_medida_comparar} ${nome_medida} é igual a ${result} ${nome_medida_2}`
         }
     } else {
-        
         document.getElementById('input-dois').value = '';
-        document.getElementById('result').innerHTML = '';
-        document.getElementById('result-error').innerHTML = '';
-}
-    
-function scrollButton() {
-    window.scrollTo(10,document.body.scrollHeight);
-}
-
+        result = document.getElementById('result');
+        result_error =  document.getElementById('result-error');
+        if (result) {
+            result.parentNode.removeChild(result);
+        }
+        else {
+            result_error.parentNode.removeChild(result_error);
+        }
+    }
 }
 
 document.getElementById("input-um").onkeyup = function() {
