@@ -86,7 +86,7 @@ function converterUnidadesDeArea() {
     if (valor_comparar != '') {
         let result = valor_comparar * valor_medida_comparar / valor_medida_comparacao
         let tamanho_result = result.toString().length;
-        if (tamanho_result >= 12 & result > 1) {
+        if (tamanho_result >= 12) {
             result = result.toExponential(5)
         }
 
