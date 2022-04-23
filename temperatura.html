@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style5.css">
+        <title>Conversor de Medidas - Tempetura</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" id="dominio-principal">Conversor de Unidades</a>
+                <div class="dropdown">
+                    <div class="ajeita-navbar">
+                        <button onclick="dropdown()" class="dropbtn">Menu</button>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <div class="ajeita-navbar">
+                            <a href="index.html">Distância</a>
+                            <a href="peso.html">Peso</a>
+                            <a href="area.html">Área</a>
+                            <a href="volume.html">Volume</a>
+                            <a href="temperatura.html">Temperatura</a>
+                            <a href="">Tempo (em construção)</a>
+                            <a href="">Dados (em construção)</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-secundario">
+            <div class="div-para-alinhar">
+                <div class="div-para-alinhar-item">
+                    <h1>De:</h1>
+                    <input id="input-um">
+                    <select id="select-medida-para-comparar" size="5">
+                        <option selected value="Celsius">Celsius</option>
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+                <div class="div-para-alinhar-item">
+                    <h1>Para:</h1>
+                    <input id="input-dois">
+                    <select id="select-medida-para-comparacao" size="5">
+                        <option value="Celsius">Celsius</option>
+                        <option selected value="Fahrenheit">Fahrenheit</option>
+                        <option value="Kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <div id="div-para-result">
+            </div>  
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Graus Celsius</h2>
+            </div>
+            <h3>
+                A escala Celsius (unidade °C), também conhecida como a escala centígrada, é
+                uma escala termométrica do sistema métrico[1] usada na maioria dos países 
+                do mundo. Teve origem a partir do modelo Criado pelo astrônomo sueco A. Celsius (1701-1744).
+                <br>
+                Esta escala é baseada nos pontos de fusão e de ebulição da água, em condição atmosférica padrão, 
+                aos quais são atribuídos os valores de 0 °C e 100 °C, respectivamente.[2] Devido a esta divisão centesimal, 
+                se deu a antiga nomenclatura grau centígrado (cem partes/graus) que, em 1948, durante a 9.ª Conferência Geral
+                de Pesos e Medidas (CR 64), teve seu nome oficialmente modificado para grau Celsius, em reconhecimento ao 
+                trabalho de Anders Celsius e para fim de desambiguação com o prefixo centi do Sistema Internacional de Unidades.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Graus Fahrenheit</h2>
+            </div>
+            <h3>
+                Fahrenheit é uma escala de temperatura criada por Daniel G. Fahrenheit em 1724. Sua unidade é o grau Fahrenheit
+                (símbolo: °F). Nesta escala, o ponto de fusão da água é de 32 °F e o ponto de ebulição é de 212 °F. Uma diferença de 
+                1,8 °F é igual a uma diferença de 1 °C.
+                <br>
+                Essa escala foi utilizada principalmente pelos países que foram colonizados pelos britânicos, mas seu uso atualmente 
+                se restringe a poucos países de língua inglesa, como os Estados Unidos e Belize. E também, muito utilizada com o povo
+                grego, para medir a temperatura de um corpo.
+            </h3>
+        </div>
+
+        <div class="container-secundario-info">
+            <div class="div-para-centralizar">
+                <h2>Graus Kelvin</h2>
+            </div>
+            <h3>
+                O kelvin (símbolo: K) é a unidade de base do Sistema Internacional de Unidades (SI) para a grandeza temperatura 
+                termodinâmica. O kelvin é a fração 1/273,16 da temperatura termodinâmica do ponto triplo da água, ou seja, 
+                é definido de tal modo que o ponto triplo da água é exatamente 273,16 K.[1] É uma das sete unidades de base do
+                 SI, muito utilizada na física e química. É utilizado para medir a temperatura absoluta de um objeto, com zero 
+                 absoluto sendo 0 K.
+                <br>
+                A escala kelvin recebeu este nome em homenagem ao físico e engenheiro irlandês William Thomson (1824–1907), 
+                1º barão Kelvin, que escreveu sobre a necessidade de uma "escala termométrica absoluta".
+            </h3>
+        </div>
+
+        <script src="./script5.js"></script>
+        <script src="./dropdown.js"></script>
+    </body>
+</html>

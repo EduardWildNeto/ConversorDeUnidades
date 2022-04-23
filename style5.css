@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+    color:black;
+}
+
+/*navbar*/
+
+.navbar {
+    background: rgb(6, 0, 206);
+    max-height: 55px;
+    margin-bottom: 10px;
+    position: sticky;
+    font-size: 20x;
+    z-index: 999;
+    top: 0px;
+    width: 100%;
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.navbar ul { 
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    
+}
+
+#dominio-principal {
+    font-size: 18px;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    margin-right:0 auto;
+}
+
+/* Ajeita navbar */
+
+.ajeita-navbar {
+    
+    width:100%;
+    margin:0 auto;
+    display:block
+}
+
+
+/*Dropdown*/
+
+
+.dropbtn {
+    background-color: rgb(6, 0, 206);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    color: white;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(6, 0, 206);
+    z-index: 999;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(238, 238, 238);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+    right: 12px;
+}
+  
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    z-index: 999;
+    color: black;
+}
+  
+
+.dropdown-content a:hover {background-color: #ddd;z-index: 999;}
+  
+  
+.show {
+    display:block;z-index: 999;
+}
+
+/* Container secundario */
+
+.container-secundario {
+    background-color: rgb(238, 238, 238);
+    max-width: 750px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 15px;
+    margin-top: 50px;
+    border: solid 1.5px black;
+    border-radius: 10px;
+}
+
+.container-secundario h3 {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.container-secundario select {
+    margin-top: 15px;
+    height: 30px;
+    width: 340px;
+    border-radius: 3px;
+}
+
+#h3-unidade-comparar {
+    margin-top: 5px;
+}
+
+#h3-quantidade-medida {
+    margin-top: 15px;
+}
+
+.container-secundario input {
+    height: 30px;
+    width: 100px;
+}
+
+/* Div para alinhar */
+
+
+.div-para-alinhar {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 50px 20px;
+    justify-content: center;
+}
+
+.div-para-alinhar h1 {
+    margin-right: 50%;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.div-para-alinhar-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inputs */
+
+#input-um {
+    width: 340px;
+    height: 35px;
+    border-radius: 3px;
+    border-style: none;
+    border: solid 1px black;
+    font-size: 20px;
+}
+
+#input-dois {
+    font-size: 20px;
+    width: 340px;
+    height: 35px;
+    resize: none;
+    background-color: rgb(185, 185, 185);
+    border-style: none;
+    border: solid 1px black;
+    border-radius: 3px;
+}
+
+/* Select medida comparar */
+
+#select-medida-para-comparar {
+    height: 52px;
+}
+#select-medida-para-comparar option {
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#select-medida-para-comparar option:target {
+    background-color: rgb(206, 206, 206);
+}
+
+/* Select medida comparação */
+
+#select-medida-para-comparacao {
+    height: 52px;
+}
+
+#select-medida-para-comparacao option {
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+#select-medida-para-comparacao option:target {
+    background-color: rgb(206, 206, 206);
+}
+
+/* Container secundario info */
+
+.container-secundario-info {
+    max-width: 750px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(238, 238, 238);
+    border: solid 1.5px black;
+    margin: auto;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+/* Div para centralizar */
+
+.div-para-centralizar {
+    text-align: center;
+   
+}
+
+.div-para-centralizar h2 {
+    margin-bottom: 10px;
+}
+/* Result */
+
+#div-para-result {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.result {
+    font-size: 12px;
+    margin-top: 8%;
+
+}
+
+#result-error {
+    color: red;
+}
+
+/* Responsividade */
+
+@media(max-width:1200px){
+    .container-secundario {
+        max-width: 500px;
+        width: 80%;
+    }
+
+    .container-secundario-info {
+        max-width: 500px;
+        width: 80%;
+    }
+
+    .div-para-alinhar {
+        flex-wrap: wrap;
+    }
+
+    #input-um {
+        width: 400px;
+    }
+    
+    #input-dois {
+        width: 400px;
+    }
+
+    #select-medida-para-comparacao {
+        width: 400px;
+        height: 40px;
+        
+    }
+
+    #select-medida-para-comparar {
+        width: 400px;
+        height: 40px;
+    }
+}
+
+@media(max-width:550px){
+
+    #input-um {
+        width: 240px;
+    }
+    
+    #input-dois {
+        width: 240px;
+    }
+
+    #select-medida-para-comparacao {
+        width: 240px;
+    }
+
+    #select-medida-para-comparar {
+        width: 240px;
+    }
+}
