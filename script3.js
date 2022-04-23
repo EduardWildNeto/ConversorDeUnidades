@@ -4,7 +4,7 @@ function saber_nome_medida_comparacao(area) {
         return nome_medida_2
     }
     if (area == 10000000000000000000000) {
-        nome_medida_2 = 'Hectómetro'
+        nome_medida_2 = 'Hectare'
         return nome_medida_2
     }
     if (area == 100000000000000000000) {
@@ -16,7 +16,7 @@ function saber_nome_medida_comparacao(area) {
         return nome_medida_2
     }
     if (area== 10000000000000000) {
-        nome_medida_2 = 'Decimetro Quadrado'
+        nome_medida_2 = 'Decímetro Quadrado'
         return nome_medida_2
     }
     if (area == 100000000000000) {
@@ -43,7 +43,7 @@ function saber_nome_medida_comparar(area) {
         return nome_medida
     }
     if (area == 10000000000000000000000) {
-        nome_medida = 'Hectómetro'
+        nome_medida = 'Hectare'
         return nome_medida
     }
     if (area == 100000000000000000000) {
@@ -76,7 +76,7 @@ function saber_nome_medida_comparar(area) {
     }
 }
 
-function converterUnidadesDePeso() {
+function converterUnidadesDeArea() {
     let valor_comparar = document.getElementById('input-um').value;
     let valor_medida_comparar = document.getElementById('select-medida-para-comparar').value;
     let valor_medida_comparacao = document.getElementById('select-medida-para-comparacao').value;
@@ -86,18 +86,18 @@ function converterUnidadesDePeso() {
     if (valor_comparar != '') {
         let result = valor_comparar * valor_medida_comparar / valor_medida_comparacao
         let tamanho_result = result.toString().length;
-        if (tamanho_result >= 12) {
+        if (tamanho_result >= 12 & result > 1) {
             result = result.toExponential(5)
         }
 
         saber_nome_medida_comparar(valor_medida_comparar)
         saber_nome_medida_comparacao(valor_medida_comparacao)
 
-        if (valor_comparar > 1) {
+        if (valor_comparar != 1) {
             nome_medida = `${nome_medida}s`
         }
 
-        if (result > 1) {
+        if (result != 1) {
             nome_medida_2 = `${nome_medida_2}s`
         }
 
@@ -132,13 +132,13 @@ function converterUnidadesDePeso() {
 }
 
 document.getElementById("input-um").onkeyup = function() {
-    converterUnidadesDePeso()
+    converterUnidadesDeArea()
 }
 
 document.getElementById('select-medida-para-comparar').onchange = function() {
-    converterUnidadesDePeso()
+    converterUnidadesDePArea()
 }
 
 document.getElementById("select-medida-para-comparacao").onchange = function() {
-    converterUnidadesDePeso()
+    converterUnidadesDeArea()
 }
