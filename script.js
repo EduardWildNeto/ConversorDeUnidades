@@ -145,3 +145,4 @@ document.getElementById("select-medida-para-comparacao").onchange = function() {
     converterUnidadesDeDistancia()
 }
 
+
