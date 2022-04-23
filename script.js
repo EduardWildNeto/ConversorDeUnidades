@@ -88,7 +88,7 @@ function converterUnidadesDeDistancia() {
         let result = medida_para_comparar*quantidade_medida_comparar/medida_para_comparacao
         let tamanho_result = result.toString().length;
         console.log(result)
-        if (tamanho_result >= 12){
+        if (tamanho_result >= 12 & result > 1){
             result = result.toExponential(5)
         }
 
@@ -97,11 +97,11 @@ function converterUnidadesDeDistancia() {
         saber_nome_medida_comparar(medida_para_comparacao)
         saber_nome_medida_comparacao(medida_para_comparar)
 
-        if (quantidade_medida_comparar > 1) {
+        if (quantidade_medida_comparar != 1) {
             nome_medida = `${nome_medida}s`
         }
 
-        if (result > 1) {
+        if (result != 1) {
             nome_medida_2 = `${nome_medida_2}s`
         }
        
