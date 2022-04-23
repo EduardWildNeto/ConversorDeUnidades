@@ -56,7 +56,7 @@ function converterUnidadesDeTemperatura() {
                 result = (valor_comparar + 273.15)
                 console.log(result)
                 let tamanho_result = result.toString().length;
-                if (tamanho_result >= 12 & result > 1) {
+                if (tamanho_result >= 12) {
                     result = result.toExponential(5)
                 }
                 result = result.toString()
@@ -77,7 +77,7 @@ function converterUnidadesDeTemperatura() {
                 result = ((valor_comparar-32)*5/9)
                 console.log(result)
                 let tamanho_result = result.toString().length;
-                if (tamanho_result >= 12 & result > 1) {
+                if (tamanho_result >= 12) {
                     result = result.toExponential(5)
                 }
                 result = result.toString()
@@ -98,7 +98,7 @@ function converterUnidadesDeTemperatura() {
                 result = ((valor_comparar+459.67)*5/9)
                 console.log(result)
                 let tamanho_result = result.toString().length;
-                if (tamanho_result >= 12 & result > 1) {
+                if (tamanho_result >= 12) {
                     result = result.toExponential(5)
                 }
                 result = result.toString()
@@ -119,7 +119,7 @@ function converterUnidadesDeTemperatura() {
                 result = (valor_comparar - 273.15)
                 console.log(result)
                 let tamanho_result = result.toString().length;
-                if (tamanho_result >= 12 & result > 1) {
+                if (tamanho_result >= 12) {
                     result = result.toExponential(5)
                 }
                 result = result.toString()
@@ -140,14 +140,14 @@ function converterUnidadesDeTemperatura() {
                 result = (valor_comparar * 9/5 - 459.67)
                 console.log(result)
                 let tamanho_result = result.toString().length;
-                if (tamanho_result >= 12 & result > 1) {
+                if (tamanho_result >= 12) {
                     result = result.toExponential(5)
                 }
                 result = result.toString()
                 result = result.replace('.', ',')
                 div_result.innerHTML = '<h1 class=result id=result><h1>'
                 document.getElementById('input-dois').value = result;
-                if (valor_comparar == 1 & result != 1) {
+                if (valor_comparar == 1) {
                     document.getElementById('result').innerHTML = `Resultado: 1 grau ${medida_comparar} é igual a ${result} graus ${medida_comparacao} `
                 } if (valor_comparar != 1 & result == 1) {
                     document.getElementById('result').innerHTML = `Resultado: ${valor_comparar} graus ${medida_comparar} é igual a 1 grau ${medida_comparacao} `
