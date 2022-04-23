@@ -136,7 +136,7 @@ document.getElementById("input-um").onkeyup = function() {
 }
 
 document.getElementById('select-medida-para-comparar').onchange = function() {
-    converterUnidadesDePArea()
+    converterUnidadesDeArea()
 }
 
 document.getElementById("select-medida-para-comparacao").onchange = function() {
