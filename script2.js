@@ -142,18 +142,18 @@ function converterUnidadesDePeso() {
     if (valor_comparar != '') {
         let result = valor_comparar * valor_medida_comparar / valor_medida_comparacao
         let tamanho_result = result.toString().length;
-        if (tamanho_result >= 12) {
+        if (tamanho_result >= 12 & result > 1) {
             result = result.toExponential(5)
         }
 
         saber_nome_medida_comparar(valor_medida_comparar)
         saber_nome_medida_comparacao(valor_medida_comparacao)
 
-        if (valor_comparar > 1) {
+        if (valor_comparar != 1) {
             nome_medida = `${nome_medida}s`
         }
 
-        if (result > 1) {
+        if (result != 1) {
             nome_medida_2 = `${nome_medida_2}s`
         }
 
